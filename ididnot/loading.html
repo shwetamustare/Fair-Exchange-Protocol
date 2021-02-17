@@ -1,0 +1,60 @@
+<head>
+<link rel="stylesheet" href="form.css">
+
+<!-- Cryptico library for RSA: referenced from cdnjs.com/libraries/cryptico -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cryptico/0.0.1343522940/aes.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cryptico/0.0.1343522940/aes.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cryptico/0.0.1343522940/api.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cryptico/0.0.1343522940/api.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cryptico/0.0.1343522940/cryptico.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cryptico/0.0.1343522940/cryptico.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cryptico/0.0.1343522940/hash.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cryptico/0.0.1343522940/hash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cryptico/0.0.1343522940/jsbn.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cryptico/0.0.1343522940/jsbn.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cryptico/0.0.1343522940/random.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cryptico/0.0.1343522940/random.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cryptico/0.0.1343522940/rsa.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cryptico/0.0.1343522940/rsa.min.js"></script>
+    
+    <!-- Node forge library for Signing and Verification of keys -->
+    <script src="https://cdn.jsdelivr.net/npm/node-forge@0.7.0/dist/forge.min.js"></script>
+</head>
+
+
+<body>
+<div class="loader"></div>
+
+<style>
+.loader {
+
+position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
+
+<input type="button" value="Joint" class="hidden" id="Joint" />
+        <input type="button" value="Send" class="hidden" id="Send"/>
+        <input type="button" value="Receipt" class="hidden" id="Receipt" />
+        <input type="button" value="Done" class="hidden" id="Done" onclick="homepage.html"/>
+        
+        <script src="ws_client.js" > </script>
+    <script data-main="sha256.js" src="require.js"></script>
+    
+</body>
